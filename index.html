@@ -12,12 +12,25 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('.menu');
+document.addEventListener("DOMContentLoaded", function () {
 
-    menuToggle.addEventListener('click', function () {
-        menu.classList.toggle('active');
+    const menuToggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".menu");
+    const menuLinks = document.querySelectorAll('.menu a');
+
+      // Membuka / menutup menu saat tombol diklik
+    menuToggle.addEventListener("click", function () {
+        menu.classList.toggle("active");
     });
+
+        // Menutup menu setelah memilih navigation
+    menuLinks.forEach(function(link) {
+        link.addEventListener('click', function() {
+            menu.classList.remove('active');
+        });
+
+});
+});
 </script>
 <body>
     <!--menu-->
@@ -110,13 +123,20 @@
                 <p>
                     I am a Statistics graduate with an interest in
                     data analytics, data visualization, and business
-                    intelligence.
-                </p>
-                <p>
-                    I enjoy working with data to discover patterns,
+                    intelligence.I enjoy working with data to discover patterns,
                     identify trends, and transform complex information
                     into insights that support better decisions.
                 </p>
+
+                <div class="education">
+                    <div class="education-icon">🎓</div>
+                    <div class="education-info">
+                        <span>EDUCATION</span>
+                        <h3>S1 Statistics</h3>
+                        <p>Hasanuddin University</p>
+                        <small>IPK : 3.73/4.00</small>
+                    </div>
+                </div>
 
                 <a href="#project" class="portfolio-btn">
                     View My Portfolio

@@ -59,67 +59,15 @@ nav > .wrapper {
     color: #EA9D9D;
 }
 
-.menu-toggle {
-    display: none;
-    font-size: 1.8rem;
-    cursor: pointer;
-}
-
-@media screen and (max-width: 768px) {
-
-    nav > .wrapper {
-        padding: 15px 20px;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .menu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #601D49;
-    }
-
-    .menu.active {
-        display: block;
-    }
-
-    .menu ul {
-        flex-direction: column;
-        gap: 0;
-        padding: 0;
-        margin: 0;
-    }
-
-    .menu ul li {
-        width: 100%;
-        text-align: center;
-    }
-
-    .menu ul li a {
-        display: block;
-        padding: 15px;
-    }
-}
-
 /*
 * Hero / jumbotron
 */
 .hero {
     min-height: 550px;
-
     width: 100%;
-
     margin: 0 auto;
-
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
     background: #FFF5F5;
 }
@@ -155,13 +103,9 @@ nav > .wrapper {
 
 .hero p {
     color: #777;
-
     font-size: 13px;
-
     line-height: 1.7;
-
     max-width: 450px;
-
     margin-bottom: 28px;
 }
 
@@ -170,9 +114,7 @@ nav > .wrapper {
 
 .buttons {
     display: flex;
-
     gap: 15px;
-
     align-items: center;
 }
 
@@ -195,15 +137,10 @@ nav > .wrapper {
 
 .hire-btn {
     border: 1px solid #601D49;
-
     color: #601D49;
-
     text-decoration: none;
-
     padding: 12px 24px;
-
     border-radius: 25px;
-
     font-size: 13px;
 }
 
@@ -214,15 +151,10 @@ nav > .wrapper {
 
 .hero-image {
     width: 50%;
-
     height: 450px;
-
     position: relative;
-
     display: flex;
-
     align-items: flex-end;
-
     justify-content: center;
 }
 
@@ -231,16 +163,11 @@ nav > .wrapper {
 
 .yellow-circle {
     position: absolute;
-
     width: 310px;
     height: 310px;
-
     background: #FFE8B4;
-
     border-radius: 50%;
-
     top: 100px;
-
     z-index: 1;
 }
 
@@ -249,13 +176,9 @@ nav > .wrapper {
 
 .hero-image img {
     position: relative;
-
     z-index: 2;
-
     height: 400px;
-    
     bottom: 50px;
-
     object-fit: contain;
 }
 
@@ -264,17 +187,11 @@ nav > .wrapper {
 
 .badge {
     position: absolute;
-
     z-index: 5;
-
     background: #BD5579;
-
     color: white;
-
     padding: 9px 16px;
-
     border-radius: 20px;
-
     font-size: 12px;
 }
 
@@ -286,20 +203,15 @@ nav > .wrapper {
 .badge-two {
     right: 10px;
     top: 180px;
-
     background: #EA9D9D;
-
     color: white;
 }
 
 .badge-three {
     right: 180px;
     bottom: 40px;
-
     background: white;
-
     color: #601D49;
-
     border: 1px solid #601D49;
 }
 
@@ -310,7 +222,6 @@ nav > .wrapper {
 
 .about {
     width: 100%;
-
     display: flex;
     align-items: center;
     gap: 30px;
@@ -322,9 +233,7 @@ nav > .wrapper {
 .about-image {
     width: 45%;
     height: 400px;
-
     position: relative;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -332,7 +241,6 @@ nav > .wrapper {
 
 .about-image img {
     width: 300px;
-
     position: relative;
     z-index: 2;
 }
@@ -341,15 +249,11 @@ nav > .wrapper {
 
 .about-circle {
     position: absolute;
-
     width: 280px;
     height: 280px;
-
     background: #FFEBB8;
-
     border-radius: 50%;
     top: 100px;
-
     z-index: 1;
 }
 
@@ -362,19 +266,14 @@ nav > .wrapper {
 
 .section-label {
     color: #f2ae00;
-
     font-size: 14px;
-
     font-weight: 600;
-
     text-transform: uppercase;
 }
 
 .about-text h2 {
     font-size: 36px;
-
     line-height: 1.2;
-
     margin: 15px 0 20px;
     color: #FFF5F5;
 }
@@ -385,21 +284,15 @@ nav > .wrapper {
 
 .about-text p {
     color: #FFF5F5;
-
     font-size: 14px;
-
     line-height: 1.8;
-
     margin-bottom: 15px;
-
     max-width: 550px;
 }
 
 .buttons-about {
     display: flex;
-
     gap: 15px;
-
     align-items: center;
 }
 
@@ -413,6 +306,55 @@ nav > .wrapper {
     background-color: #601D49;
     font-size: 13px;
     transition: 0.3s;
+}
+
+.education {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0 25px;
+    padding: 15px 20px;
+    max-width: 450px;
+
+    background: #FFF5F5;
+    border: 1px solid rgba(255, 235, 184, 0.6);
+    border-radius: 15px;
+}
+
+.education-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #FFEBB8;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.education-info span {
+    color: #EA9D9D;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.education-info h3 {
+    color: #601D49;
+    font-size: 16px;
+    margin: 4px 0;
+}
+
+.education-info p {
+    color: #601D49;
+    font-size: 12px;
+    margin: 0 0 3px;
+}
+
+.education-info small {
+    color: #601D49;
+    font-size: 11px;
 }
 
 /*Social Media*/
@@ -683,4 +625,245 @@ nav > .wrapper {
 .contact-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+
+/* =========================
+   RESPONSIVE / MOBILE
+========================= */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+     .wrapper {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    nav > .wrapper {
+        padding: 15px 20px;
+        position: sticky;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+        margin-left: auto;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: auto;
+        right: 0;
+        width: 160px;
+        background-color: #601D49;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .menu.active {
+        display: block;
+    }
+
+    .menu > ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu > ul > li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu > ul > li > a {
+        display: block;
+        padding: 10px 15px;
+        text-align: left;
+    }
+
+     .menu > ul > li > a:hover {
+        background-color: #EA9D9D;
+        color: #601D49;
+    }
+}
+
+/* =========================
+   MOBILE HERO
+========================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        min-height: auto;
+        width: 100%;
+        padding: 60px 20px 40px;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        gap: 20px;
+        box-sizing: border-box;
+    }
+
+    /* LEFT SIDE */
+    .hero-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hello {
+        font-size: 12px;
+        padding: 6px 12px;
+        margin-bottom: 15px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    .hero p {
+        font-size: 13px;
+        line-height: 1.6;
+        max-width: 350px;
+        margin-bottom: 22px;
+    }
+
+    /* BUTTONS */
+    .buttons {
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .btn-cv,
+    .hire-btn {
+        font-size: 12px;
+        padding: 11px 18px;
+    }
+
+
+    /* =========================
+       HERO IMAGE
+    ========================= */
+
+    .hero-image {
+        width: 100%;
+        height: 350px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        position: relative;
+    }
+
+
+    /* YELLOW CIRCLE */
+
+    .yellow-circle {
+        width: 230px;
+        height: 230px;
+        top: 50px;
+    }
+
+
+    /* PROFILE IMAGE */
+
+    .hero-image img {
+        height: 300px;
+        bottom: 20px;
+        max-width: 90%;
+    }
+
+
+    /* =========================
+       BADGES
+    ========================= */
+
+    .badge {
+        font-size: 10px;
+        padding: 7px 11px;
+        border-radius: 15px;
+    }
+
+    .badge-one {
+        bottom: 180px;
+        left: 40px;
+    }
+
+    .badge-two {
+        right: 30px;
+        top: 100px;
+    }
+
+    .badge-three {
+        right: 220px;
+        bottom: 10px;
+    }
+}
+
+
+ /* =========================
+       ABOUT
+    ========================= */
+@media (max-width: 768px) {
+
+    .about {
+        flex-direction: column;
+        padding: 50px 20px;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .about-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .about-image img {
+        width: 230px;
+    }
+
+    .about-circle {
+        width: 220px;
+        height: 220px;
+        top: 60px;
+    }
+
+    .about-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text h2 {
+        font-size: 30px;
+    }
+
+    .about-text p {
+        font-size: 13px;
+    }
+
+    .education {
+        width: 100%;
+        max-width: 400px;
+        box-sizing: border-box;
+        text-align: left;
+    }
+
+    .buttons-about {
+        justify-content: center;
+    }
 }
