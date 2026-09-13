@@ -14,22 +14,50 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
+    /* =========================
+       MOBILE MENU
+    ========================= */
+
     const menuToggle = document.querySelector(".menu-toggle");
     const menu = document.querySelector(".menu");
-    const menuLinks = document.querySelectorAll('.menu a');
+    const menuLinks = document.querySelectorAll(".menu a");
 
-      // Membuka / menutup menu saat tombol diklik
+    // Membuka / menutup menu
     menuToggle.addEventListener("click", function () {
         menu.classList.toggle("active");
     });
 
-        // Menutup menu setelah memilih navigation
+    // Menutup menu setelah memilih navigation
     menuLinks.forEach(function(link) {
-        link.addEventListener('click', function() {
-            menu.classList.remove('active');
+        link.addEventListener("click", function() {
+            menu.classList.remove("active");
+        });
+    });
+
+
+    /* =========================
+       SKILLS SLIDER
+    ========================= */
+
+    const slider = document.querySelector(".skills-slider");
+    const dots = document.querySelectorAll(".dot");
+
+    slider.addEventListener("scroll", function () {
+
+        const index = Math.round(
+            slider.scrollLeft / slider.clientWidth
+        );
+
+        dots.forEach(function(dot) {
+            dot.classList.remove("active");
         });
 
-});
+        if (dots[index]) {
+            dots[index].classList.add("active");
+        }
+
+    });
+
 });
 </script>
 <body>
@@ -64,7 +92,6 @@ document.addEventListener("DOMContentLoaded", function () {
             <h1>
                 I'm <span>Zulfira</span>,<br>
                 Data & Analytics<br>
-                <span class="tagline">Turning Data Into Meaningful Insights.</span> 
             </h1>
 
             <p>
@@ -158,10 +185,11 @@ document.addEventListener("DOMContentLoaded", function () {
         <!---Skills--->
         <section class="skills" id="skills">
             <div class="skills-content">
-                <h2>SKILL</h2>
+                <h2>MY SKILLS</h2>
                 
-                <div class="skills-container">
-                   <div class="skill-card">
+                <div class="skills-slider" id="skillsSlider">
+                   <div class="skill-slide">
+                    <div class="skill-card">
                     <img src="images/Excel logo.png" alt="Excel">
                     <h3>Excel</h3>
 
@@ -219,7 +247,10 @@ document.addEventListener("DOMContentLoaded", function () {
                         <span>Data Query</span>
                     </div>
                    </div>
+                </div>  
 
+
+                 <div class="skill-slide">
                    <div class="skill-card">
                     <img src="images/logo-stable.png" alt="vscode">
                     <h3>VS Code</h3>
@@ -275,8 +306,12 @@ document.addEventListener("DOMContentLoaded", function () {
                         <span>Infographic</span>
                     </div>
                    </div>
+                 </div>
+                </div>
 
-                   </div>
+                <div class="slider-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
                 </div>
             </div>
 
