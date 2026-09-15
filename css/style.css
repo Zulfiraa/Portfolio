@@ -1334,3 +1334,17 @@ nav > .wrapper {
         height: auto;
     }
 }
+
+@media (max-width: 768px) {
+    section {
+        min-height: auto;
+        padding: 50px 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        min-height: auto;
+        padding: 35px 5%;
+    }
+}
