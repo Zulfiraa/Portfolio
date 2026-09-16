@@ -742,7 +742,7 @@ nav > .wrapper {
 }
 
 .project-detail-header {
-    margin-top: 40px;
+    margin-top: 10px;
 }
 
 .project-category {
@@ -782,8 +782,9 @@ nav > .wrapper {
 
 
 .project-section {
-    margin-top: 30px;
+    margin-top: auto;
     min-height: auto;
+    padding: 25px 8%;
 }
 
 .project-section h2 {
@@ -799,6 +800,43 @@ nav > .wrapper {
     width: 100%;
     margin-top: 25px;
     border-radius: 15px;
+}
+
+/* Analysis Cards */ 
+
+.analysis-steps { 
+    max-width: 1100px; 
+    margin: 0 auto; 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+} 
+
+.analysis-step { 
+    background-color: #ffffff; 
+    padding: 28px 22px; 
+    border-radius: 16px; 
+    border: 1px solid #ead5dc; 
+    box-shadow: 0 6px 18px rgba(96, 29, 73, 0.08); 
+    transition: 0.3s ease; 
+} 
+
+.analysis-step:hover { 
+    transform: translateY(-6px); 
+    box-shadow: 0 10px 25px rgba(96, 29, 73, 0.14); 
+} 
+
+.analysis-step h3 { 
+    color: #8B1E2D; 
+    font-size: 1.05rem; 
+    margin-bottom: 12px; 
+} 
+
+.analysis-step p { 
+    color: #666; 
+    font-size: 0.9rem; 
+    line-height: 1.7; 
+    margin: 0; 
 }
 
 
@@ -1492,4 +1530,77 @@ nav > .wrapper {
     .project-section {
         margin-top: 40px;
     }
+}
+
+
+/* =========================
+   TABLET & MOBILE data analysis
+========================= */
+
+@media (max-width: 768px) {
+
+    .project-section {
+        padding: 10px 3%;
+    }
+
+    .project-section h2 {
+        font-size: 1.9rem;
+        margin-bottom: 15px;
+    }
+
+    .project-section > p {
+        font-size: 0.9rem;
+        line-height: 1.7;
+        margin-bottom: 35px;
+    }
+
+    .analysis-steps {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .analysis-step {
+        padding: 22px 18px;
+        border-radius: 14px;
+    }
+
+    .analysis-step h3 {
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+    }
+
+    .analysis-step p {
+        font-size: 0.82rem;
+        line-height: 1.6;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+    .project-section {
+        padding: 5px 5%;
+    }
+
+    .project-section h2 {
+        font-size: 1.7rem;
+    }
+
+    .project-section > p {
+        font-size: 0.85rem;
+        text-align: left;
+    }
+
+    .analysis-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .analysis-step {
+        padding: 20px;
+    }
+
 }

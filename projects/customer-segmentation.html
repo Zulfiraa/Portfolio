@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Employee Attrition Analysis | Zulfira</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <main class="project-detail">
+
+        <a href="../index.html" class="back-button">
+            ← Back to Portfolio
+        </a>
+
+        <div class="project-detail-header">
+
+            <span class="project-category">
+                Python | Data Analysis
+            </span>
+
+            <h1>Ecommerce Customer Segmentation</h1>
+
+            <p>
+                Analyzed ecommerce customers data to identify customer groups 
+                with different levels of engagement and monetary value..
+            </p>
+
+        </div>
+
+
+        <!-- PROJECT INFORMATION -->
+
+        <div class="project-info">
+
+            <div class="info-card">
+                <h4>Dataset</h4>
+                <p>1,642 transaction records</p>
+            </div>
+
+            <div class="info-card">
+                <h4>Tools</h4>
+                <p>Python</p>
+                <p>Visual Studio Code</p>
+            </div>
+
+            <div class="info-card">
+                <h4>Focus</h4>
+                <p>Customer Segmentation</p>
+            </div>
+
+        </div>
+
+
+        <!-- OBJECTIVE -->
+
+        <section class="project-section">
+
+            <h2>Project Objective</h2>
+
+            <p>
+                The objective of this project was to analyze segment e-commerce customers 
+                based on their purchasing behavior using RFM (Recency, Frequency, Monetary) 
+                analysis and K-Means clustering, in order to identify valuable customer groups 
+                and support targeted marketing strategies.
+            </p>
+
+        </section>
+
+
+        <!-- ANALYSIS -->
+
+        <section class="project-section">
+
+            <h2>Data Analysis</h2>
+
+            <p>
+                The analysis was conducted using Python and  applies RFM analysis 
+                to measure customer recency, purchase frequency, and monetary value. 
+                K-Means clustering is then used to group customers with similar purchasing 
+                characteristics. The optimal number of clusters is evaluated using the Elbow Method 
+                and Silhouette Score.
+            </p>
+            
+            <div class="analysis-steps">
+                <div class="analysis-step">
+                    <h3>01. RFM Analysis</h3> 
+                    <p> Calculated Recency, Frequency, and Monetary metrics 
+                        to measure customer purchasing behavior. 
+                    </p>
+                </div>
+
+                <div class="analysis-step">
+                    <h3>02. Data Transformation</h3> 
+                    <p> Applied log transformation and standardization to 
+                        prepare the RFM variables for clustering. 
+                    </p>
+                </div>
+
+                <div class="analysis-step">
+                    <h3>03. Cluster Evaluation</h3> 
+                    <p> Tested K-Means with K = 2–10 using the Elbow Method 
+                    and Silhouette Score. 
+                    </p>
+                </div>
+
+                <div class="analysis-step">
+                    <h3>04. K-Means Clustering</h3> 
+                    <p> Selected K = 2 based on the highest Silhouette Score of 0.3632 and 
+                        analyzed the characteristics of each customer segment. 
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- FINDINGS -->
+
+        <section class="project-section">
+
+            <h2>Key Findings</h2>
+
+            <div class="findings">
+
+                <div class="finding-card">
+                    <h3>50,26%</h3>
+                    <p>
+                        More Recent Purchases
+                    </p>
+                </div>
+
+                <div class="finding-card">
+                    <h3>138,52%</h3>
+                    <p>
+                        More Frequent Purchases
+                    </p>
+                </div>
+
+                <div class="finding-card">
+                    <h3>224,77%</h3>
+                    <p>
+                        Higher Customer Value
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- INSIGHTS -->
+
+        <section class="project-section">
+
+            <h2>Key Insights</h2>
+
+            <ul>
+                <li>
+                    Cluster 0 (More Active Customers) represents 50.95% of customers 
+                    but contributes 77.14% of total revenue.
+                </li>
+
+                <li>
+                    Cluster 1 (Less Active Customers) represents 49.05% of customers 
+                    but contributes only 22.86% of revenue.
+                </li>
+            </ul>
+
+        </section>
+
+
+        <!-- CONCLUSION -->
+
+        <section class="project-section">
+
+            <h2>Conclusion</h2>
+
+            <p>
+                The analysis suggests that Cluster 0 is the more valuable 
+                and active segment (77.14% of revenue), while Cluster 1 is 
+                less active and lower-value. The segmentation can be used to 
+                develop differentiated strategies, such as customer retention 
+                and loyalty programs for Cluster 0 and reactivation campaigns 
+                for Cluster 1.
+            </p>
+
+        </section>
+
+
+        <!-- GITHUB -->
+
+        <div class="project-links">
+
+            <a href="https://github.com/Zulfiraa/Ecommerce-Customer-Segmentation/tree/main"
+               target="_blank"
+               class="project-button">
+
+                View Source Code →
+                
+            </a>
+
+        </div>
+
+
+    </main>
+
+</body>
+</html>
