@@ -371,7 +371,7 @@ nav > .wrapper {
     height: 280px;
     background: #FFEBB8;
     border-radius: 50%;
-    top: 100px;
+    top: 90px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
@@ -394,7 +394,7 @@ nav > .wrapper {
     max-width: 450px;
 
     background: #FFF5F5;
-    border: 1px solid rgba(255, 235, 184, 0.6);
+    border: 2px solid rgba(255, 235, 184, 0.6);
     border-radius: 15px;
 }
 
@@ -453,6 +453,7 @@ nav > .wrapper {
     background-color: #FFF5F5;
     text-align: center;
     align-items: center;
+    border: 2px solid rgba(255, 235, 184, 0.6);
 }
 
 .stat-card h3 {
@@ -462,7 +463,7 @@ nav > .wrapper {
 }
 
 .stat-card p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #601D49;
     margin: 0;
 }
@@ -1398,6 +1399,114 @@ nav > .wrapper {
         
     }
 
+}
+
+@media (max-width: 480px) {
+
+    /* =========================
+       ABOUT
+    ========================= */
+
+    .about {
+        padding: 30px 5% 50px;
+    }
+
+    .section-label {
+        font-size: 13px;
+        text-align: left;
+        margin-bottom: 8px;
+    }
+
+    .about-title {
+        font-size: 24px;
+        line-height: 1.25;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+
+    /* =========================
+       FOTO
+    ========================= */
+
+    .about-image {
+        width: 100%;
+        height: 220px;
+        margin-top: 0;
+    }
+
+    .about-image img {
+        width: 240px;
+        max-width: 90%;
+    }
+
+    .about-circle {
+        width: 165px;
+        height: 165px;
+        top: 48px;
+    }
+
+
+    /* =========================
+       EDUCATION
+    ========================= */
+
+    .about-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .education {
+        width: 90%;
+        max-width: 350px;
+        margin: 0 auto 20px;
+        padding: 12px 14px;
+    }
+
+
+    /* =========================
+       STATS
+    ========================= */
+
+    .about-stats {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 7px;
+        margin-top: 10px;
+    }
+
+    .stat-card {
+        padding: 8px 4px;
+        border-radius: 10px;
+    }
+
+    .stat-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .stat-card p {
+        font-size: 0.62rem;
+    }
+
+
+    /* =========================
+       BUTTON
+    ========================= */
+
+    .buttons-about {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portfolio-btn {
+        margin: 15px auto 0;
+        padding: 10px 17px;
+        font-size: 12px;
+    }
 }
 
 /* =========================
