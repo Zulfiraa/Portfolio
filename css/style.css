@@ -915,6 +915,13 @@ nav > .wrapper {
 /* =========================
    RESPONSIVE / MOBILE
 ========================= */
+@media (max-width: 768px) {
+    section {
+        min-height: auto;
+        padding: 50px 5%;
+    }
+}
+
 .menu-toggle {
     display: none;
     font-size: 1.8rem;
@@ -1414,18 +1421,16 @@ nav > .wrapper {
 }
 
 
-@media (max-width: 768px) {
-    section {
-        min-height: auto;
-        padding: 50px 5%;
-    }
-}
-
-
-
 /* =========================
    SMALL MOBILE
 ========================= */
+@media (max-width: 480px) {
+    section {
+        min-height: auto;
+        padding: 35px 5%;
+    }
+}
+
 /*nav*/
 @media screen and (max-width: 480px) {
 
@@ -1868,12 +1873,5 @@ nav > .wrapper {
     .project-container {
         margin: 25px auto;
         height: auto;
-    }
-}
-
-@media (max-width: 480px) {
-    section {
-        min-height: auto;
-        padding: 35px 5%;
     }
 }
