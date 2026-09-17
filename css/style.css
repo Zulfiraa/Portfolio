@@ -1609,7 +1609,7 @@ nav > .wrapper {
     }
 
     .education {
-        width: 100%;
+        width: 90%;
         max-width: 350px;
         margin: 0 auto 0px;
         padding: 12px 50px;
@@ -1818,7 +1818,7 @@ nav > .wrapper {
     .project-detail-header p {
         font-size: 13px;
     }
-    
+
     .project-section {
         padding: 18px 5%;
     }
