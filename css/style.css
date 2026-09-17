@@ -1807,12 +1807,24 @@ nav > .wrapper {
 
 @media (max-width: 480px) {
 
+    .project-detail {
+        padding: 30px 5%;
+    }
+
+    .project-detail-header h1 {
+        font-size: 1.7rem;
+    }
+
+    .project-detail-header p {
+        font-size: 13px;
+    }
+    
     .project-section {
-        padding: 5px 5%;
+        padding: 18px 5%;
     }
 
     .project-section h2 {
-        font-size: 1.7rem;
+        font-size: 1.3rem;
     }
 
     .project-section > p {
@@ -1821,11 +1833,15 @@ nav > .wrapper {
     }
 
     .analysis-steps {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .analysis-step {
-        padding: 20px;
+        padding: 18px;
+    }
+
+    .finding-card {
+        padding: 18px;
     }
 
 }
