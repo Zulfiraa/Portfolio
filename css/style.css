@@ -907,7 +907,20 @@ nav > .wrapper {
     margin-top: 50px;
 }
 
+/* =========================
+   FOOTER
+========================= */
+footer {
+    background: #601D49;
+    color: #F9F7F7;
+    text-align: center;
+    padding: 18px 8%;
+    font-size: 14px;
+}
 
+footer p {
+    margin: 0;
+}
 
 
 
@@ -1614,8 +1627,8 @@ nav > .wrapper {
     }
 
     .education {
-        width: 90%;
-        max-width: 350px;
+        width: 50%;
+        max-width: 300px;
         margin: 0 auto 0px;
         padding: 12px 50px;
 
