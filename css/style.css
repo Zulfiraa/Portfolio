@@ -1459,10 +1459,10 @@ nav > .wrapper {
     }
 
     .education {
-        width: 90%;
+        width: 100%;
         max-width: 350px;
         margin: 0 auto 20px;
-        padding: 12px 14px;
+        padding: 12px 15px;
     }
 
 
@@ -1504,7 +1504,7 @@ nav > .wrapper {
 
     .portfolio-btn {
         margin: 15px auto 0;
-        padding: 10px 17px;
+        padding: 10px 20px;
         font-size: 12px;
     }
 }
