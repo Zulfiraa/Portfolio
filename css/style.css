@@ -1421,75 +1421,6 @@ nav > .wrapper {
     }
 }
 
-/* =========================
-   PROJECTS DETAIL - MOBILE
-========================= */
-@media (max-width: 768px) {
-
-    .project-detail {
-        padding: 30px 5%;
-    }
-
-    .project-detail-header h1 {
-        font-size: 2.2rem;
-    }
-
-    .project-info {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .findings {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .project-section {
-        margin-top: 1px;
-        margin-bottom: 2px;
-    }
-}
-
-
-/* =========================
-   TABLET & MOBILE data analysis
-========================= */
-
-@media (max-width: 768px) {
-
-    .project-section {
-        padding: 10px 3%;
-    }
-
-    .project-section h2 {
-        font-size: 1.9rem;
-        margin-bottom: 15px;
-    }
-
-    .project-section > p {
-        font-size: 0.9rem;
-        line-height: 1.7;
-        margin-bottom: 20px;
-    }
-
-    .analysis-steps {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-    }
-
-    .analysis-step {
-        padding: 20px 15px;
-        border-radius: 14px;
-    }
-
-    .analysis-step h3 {
-        font-size: 0.95rem;
-        margin-bottom: 10px;
-    }
-
-    .analysis-step p {
-        font-size: 12px;
-        line-height: 1.6;
-    }
-}
 
 
 /* =========================
@@ -1801,6 +1732,75 @@ nav > .wrapper {
 
     .project-button {
         font-size: 12px;
+    }
+}
+
+/* =========================
+   PROJECTS DETAIL - MOBILE
+========================= */
+@media (max-width: 768px) {
+
+    .project-detail {
+        padding: 30px 5%;
+    }
+
+    .project-detail-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .project-info {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .findings {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .project-section {
+        margin-top: 1px;
+        margin-bottom: 2px;
+    }
+}
+
+/* =========================
+   TABLET & MOBILE data analysis
+========================= */
+
+@media (max-width: 768px) {
+
+    .project-section {
+        padding: 10px 3%;
+    }
+
+    .project-section h2 {
+        font-size: 1.9rem;
+        margin-bottom: 15px;
+    }
+
+    .project-section > p {
+        font-size: 0.9rem;
+        line-height: 1.7;
+        margin-bottom: 20px;
+    }
+
+    .analysis-steps {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .analysis-step {
+        padding: 20px 15px;
+        border-radius: 14px;
+    }
+
+    .analysis-step h3 {
+        font-size: 0.95rem;
+        margin-bottom: 10px;
+    }
+
+    .analysis-step p {
+        font-size: 12px;
+        line-height: 1.6;
     }
 }
 
